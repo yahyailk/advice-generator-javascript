@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+#background {
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#background .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(217deg, 19%, 24%);
+  padding: 4rem;
+  border-radius: 1rem;
+  width: 530px;
+  position: relative;
+}
+#background .card .advice_no {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+}
+#background .card .advice {
+  font-size: 2.8rem;
+  color: hsl(193deg, 38%, 86%);
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+#background .card .divider {
+  margin-bottom: 2.5rem;
+}
+#background .card .divider img {
+  width: 100%;
+}
+#background .card .dice {
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+  padding: 1.8em;
+  cursor: pointer;
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+  transform: translateX(50%);
+}
+#background .card .dice:hover {
+  box-shadow: 0px 0px 35px 1px hsl(150deg, 100%, 66%);
+}
+
+@media screen and (max-width: 576px) {
+  #background .card {
+    width: 360px;
+  }
+  #background .card .advice {
+    font-size: 2.4rem;
+  }
+  #background .card .divider {
+    margin-bottom: 2rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
