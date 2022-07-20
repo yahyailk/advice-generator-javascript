@@ -10,7 +10,7 @@ function getAdvicefromApi () {
     fetch("https://api.adviceslip.com/advice")
     .then((response) => {
         if(!response.ok){
-            throw new Error("Couldn't get any advice!")
+            throw new Error("Information not found")
         }
         return response.json()
     })
@@ -20,9 +20,11 @@ function getAdvicefromApi () {
         adviceNo.innerHTML = "ADVICE #" + id;
         adviceInner.innerHTML = advice 
     })
-    .catch((err) => {
-        adviceInner.innerHTML = err;
-    })
+    .catch((err) => errorMsg(err))
+}
+
+function errorMsg (err){
+    adviceInner.innerHTML = err.message
 }
 
 
